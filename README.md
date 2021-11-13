@@ -1,8 +1,10 @@
 # BananaPi M2 Pro
-This repository contains an intallation script for the Banana Pi M2 Pro SBC.
+This repository contains my personal intallation script for the Banana Pi M2 Pro SBC.
+Motivation: tha base image is extremely minimal and requires many steps to make system usable.
 
 ## Base image
-Base image for this installation is
+The base image for this installation is
+
 > 2021-06-21-debian-10-buster-bpi-m5-m2pro-aarch64-sd-emmc.img
 
 from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
