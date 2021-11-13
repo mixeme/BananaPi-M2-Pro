@@ -19,10 +19,10 @@ from vendor [website](https://download.banana-pi.dev/d/ca025d76afd448aabc63/file
 	+ Desktop is LightDM (display manager) + xfwm (window manager) + LXQt/XFCE;
 	+ LightDM is configured to provide user list on logon screen (`lightdm/10_userlist.conf` file) and autologin for user `pi` (`lightdm/11_autologin.conf` file);
 9. Install Wi-Fi & Bluetooth utils (Network Manager Gnome and Blueman);
-10. Install and configure VNC (TigerVNC) for :0 (physical) and :1 (for `pi`) displays;
-11. Install other userful apps (comment unnecessary or add your favorite);
+10. Install and configure VNC server (TigerVNC) for `:0` (physical) and `:1` (for `pi`) displays;
+11. Install other userful apps (comment unnecessary or add your favorite ones);
 12. Make some system changes;
 	+ Add user `pi` to group `bluetooth`;
 	+ Change HDMI mode to 720p;
-	+ Enable Network Manager for managing network adapters
+	+ Enable Network Manager for managing network adapters.
 13. Reboot.
