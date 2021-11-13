@@ -11,13 +11,15 @@ from vendor [website](https://download.banana-pi.dev/d/ca025d76afd448aabc63/file
 1. Rename host to "BananaPi";
 2. Upgrade system;
 3. Make user `pi` as `sudo`;
-4. Add another users (specify name of them or comment it);
+4. Add another user (specify his name or comment it);
 5. Install Banana Pi Tools;
 6. Install Bluetooth Driver;
 7. Install Network Manager (for manage Wi-Fi);
 8. Install Desktop Environment (LXQt or XFCE);
+
 	Desktop is LightDM (displat manager) + xfwm (window mananger) + LXQt/XFCE;
 	LightDM is configured to provide user list on logon screen and autologin for pi user
+
 9. Install Wi-Fi & Bluetooth utils (Network Manager Gnome and Blueman);
 10. Install and configure VNC (TigerVNC) for :0 (physical) and :1 (pi) displays;
 11. Install other userful apps (comment unnecessary or add your favorite);
