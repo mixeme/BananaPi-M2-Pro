@@ -1,0 +1,27 @@
+[Unit]
+Description=Remote desktop service (VNC) for %i user
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=forking
+#RemainAfterExit=yes
+#PAMName=login
+User=%i
+
+# Set up environment
+EnvironmentFile=-/etc/vnc/%i.env
+
+# Start and stop commands
+#ExecStart=vncserver :"${VNC_NUMBER}" -localhost no -geometry "${GEOMETRY}"
+ExecStart=vncserver :"${VNC_NUMBER}" -geometry "${GEOMETRY}"
+ExecStop=vncserver -kill :"${VNC_NUMBER}"
+# Alternatively you can use absolute path to vncserver
+# /usr/bin/tigervncserver
+
+# Restart info
+#Restart=on-failure
+#RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
