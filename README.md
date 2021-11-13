@@ -17,7 +17,7 @@ from vendor [website](https://download.banana-pi.dev/d/ca025d76afd448aabc63/file
 7. Install Network Manager (for manage Wi-Fi);
 8. Install Desktop Environment (LXQt or XFCE);
 	+ Desktop is LightDM (display manager) + xfwm (window manager) + LXQt/XFCE;
-	+ LightDM is configured to provide user list on logon screen (`10_userlist.conf`) and autologin for user `pi` (`11_autologin.conf`);
+	+ LightDM is configured to provide user list on logon screen (`lightdm/10_userlist.conf` file) and autologin for user `pi` (`lightdm/11_autologin.conf` file);
 9. Install Wi-Fi & Bluetooth utils (Network Manager Gnome and Blueman);
 10. Install and configure VNC (TigerVNC) for :0 (physical) and :1 (for `pi`) displays;
 11. Install other userful apps (comment unnecessary or add your favorite);
