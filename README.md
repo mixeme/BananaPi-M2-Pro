@@ -1,4 +1,4 @@
-# BananaPi M2 Pro
+# Banana Pi M2 Pro
 This repository contains my personal intallation script for the Banana Pi M2 Pro SBC.
 
 Motivation: tha base Debian image is extremely minimal and requires many steps to make system usable.
