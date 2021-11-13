@@ -46,3 +46,5 @@ cd ~/Install
 chmod +x install_bananapi.sh
 ./install_bananapi.sh
 ```
+
+	fdfdsfsd
