@@ -1,9 +1,10 @@
 # BananaPi M2 Pro
 This repository contains my personal intallation script for the Banana Pi M2 Pro SBC.
-Motivation: tha base image is extremely minimal and requires many steps to make system usable.
+
+Motivation: tha base Debian image is extremely minimal and requires many steps to make system usable.
 
 ## Base image
-The base image for this installation is
+The base image for this installation is Debian 10 (Buster) with kernel 4.9
 
 > 2021-06-21-debian-10-buster-bpi-m5-m2pro-aarch64-sd-emmc.img
 
@@ -28,3 +29,14 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 	+ Change HDMI mode to 720p;
 	+ Enable Network Manager for managing network adapters.
 13. Reboot.
+
+## How to
+1. Download and flash the base image to SD card;
+2. Copy repository contents to `/root/Install`;
+3. Permit `root` login through SSH. Skip this step if you will use keyboard and monitor for the installation;
+	1. Open `/etc/ssh/sshd_config` and change line with `PermitRootLogin` to
+
+> PermitRootLogin yes
+
+
+
