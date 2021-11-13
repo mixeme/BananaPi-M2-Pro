@@ -34,8 +34,8 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 1. Download and flash the base image to SD card;
 2. Copy repository contents to `/root/Install`;
 3. Permit `root` login through SSH. Skip this step if you will use keyboard and monitor for the installation;
-	
-	Open `/etc/ssh/sshd_config` and change line with `PermitRootLogin` to
+	+ Open `/etc/ssh/sshd_config`;
+	+ Change line with `PermitRootLogin` to
 
 > PermitRootLogin yes
 
