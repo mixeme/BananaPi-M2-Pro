@@ -10,7 +10,7 @@ from vendor [website](https://download.banana-pi.dev/d/ca025d76afd448aabc63/file
 ## What does script do?
 1. Rename host to "BananaPi";
 2. Upgrade system;
-3. Make user 'pi' as 'sudo';
+3. Make user `pi` as `sudo`;
 4. Add another users (specify name of them or comment it);
 5. Install Banana Pi Tools;
 6. Install Bluetooth Driver;
@@ -22,7 +22,7 @@ from vendor [website](https://download.banana-pi.dev/d/ca025d76afd448aabc63/file
 10. Install and configure VNC (TigerVNC) for :0 (physical) and :1 (pi) displays;
 11. Install other userful apps (comment unnecessary or add your favorite);
 12. Make some system changes;
-	1) Add user 'pi' to group 'bluetooth';
+	1) Add user `pi` to group `bluetooth`;
 	2) Change HDMI mode to 720p;
 	3) Enable Network Manager for managing network adapters
 13. Reboot.
