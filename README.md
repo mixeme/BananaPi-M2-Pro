@@ -38,6 +38,9 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 	+ Change line with `PermitRootLogin` to
 
 > PermitRootLogin yes
-
-
-
+4. Insert SD card to Banana and power on;
+5. Login as root (password `bananapi`);
+6. Start script
+	cd ~/Install
+	chmod +x install_bananapi.sh
+	./install_bananapi.sh
