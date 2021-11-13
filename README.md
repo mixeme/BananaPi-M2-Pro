@@ -5,7 +5,7 @@ This repository contains an intallation script for the Banana Pi M2 Pro SBC.
 Base image for this installation is
 > 2021-06-21-debian-10-buster-bpi-m5-m2pro-aarch64-sd-emmc.img
 
-from vendor [website](https://download.banana-pi.dev/d/ca025d76afd448aabc63/files/?p=%2FImages%2FBPI-M5%2Fdebian%2F2021-06-21-debian-10-buster-bpi-m5-m2pro-aarch64-sd-emmc.img.zip).
+from the vendor [website] (https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 
 ## What does script do?
 1. Rename host to "BananaPi";
