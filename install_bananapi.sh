@@ -29,7 +29,7 @@ fi
 	HOSTNAME=BananaPi
 
 # Host rename
-	hostnamectl set-hostname BananaPi
+	hostnamectl set-hostname $HOSTNAME
 
 # System update
 	echo "===== Start system update. ====="
