@@ -4,7 +4,7 @@ This repository contains my personal intallation script for the Banana Pi M2 Pro
 Motivation: tha base Debian image is extremely minimal and requires many steps to make system usable.
 
 ## Base image
-The base image for this installation is Debian 10 (Buster) with kernel 4.9
+The base image for this installation is Debian 10 (Buster) with kernel 4.9.241.
 
 > 2021-06-21-debian-10-buster-bpi-m5-m2pro-aarch64-sd-emmc.img
 
