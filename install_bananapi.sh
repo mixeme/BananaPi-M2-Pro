@@ -167,5 +167,9 @@ fi
 	## Enable Network Manager
 	sed -i "s/managed=false/managed=true/" /etc/NetworkManager/NetworkManager.conf
 
+	## Rename MiniDLNA host and enable automatic discovery
+	sed -i "s/#friendly_name=/friendly_name=$HOSTNAME/" /etc/minidlna.conf
+	sed -i "s/#inotify=yes/inotify=yes/" /etc/minidlna.conf
+
 # Reboot system
 	reboot
