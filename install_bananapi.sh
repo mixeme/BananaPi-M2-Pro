@@ -1,5 +1,14 @@
 #! /bin/bash
 
+# Base image is Debian Buster with kernel 4.9.241:
+# 2021-06-21-debian-10-buster-bpi-m5-m2pro-aarch64-sd-emmc.img
+#
+# Download it from
+# https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian
+#
+# Default login credentials:
+# root - bananapi; pi/bananapi.
+
 # Check input arguments
 if [[ $# -ne 1 ]];
 then
