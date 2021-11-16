@@ -27,7 +27,8 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 12. Make some system changes;
 	+ Add user `pi` to group `bluetooth`;
 	+ Change HDMI mode to 720p;
-	+ Enable Network Manager for managing network adapters.
+	+ Enable Network Manager for managing network adapters;
+	+ Rename MiniDLNA hostname.
 13. Reboot.
 
 ## How to
