@@ -25,6 +25,9 @@ else
 	esac
 fi
 
+# Variables
+	HOSTNAME=BananaPi
+
 # Host rename
 	hostnamectl set-hostname BananaPi
 
