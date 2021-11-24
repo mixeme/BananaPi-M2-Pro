@@ -11,12 +11,15 @@ After=display-manager.service
 [Service]
 Type=forking
 
+# Set environment
+Environment=HOME=/root
+
 # Start and stop commands
 ExecStart=/usr/local/bin/x0vnc.sh
 
 # Restart after session log out
 Restart=on-failure
-RestartSec=10
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
