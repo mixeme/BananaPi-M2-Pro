@@ -47,7 +47,6 @@ fi
 	adduser myuser --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 	### Set up password
 	chpasswd <<< "myuser:password"
-	usermod -aG netdev,bluetooth myuser
 
 # Software installation
 ## Sudo
@@ -179,6 +178,7 @@ fi
 # Change system configs
 	## Add users to groups
 	usermod -aG bluetooth pi
+	usermod -aG netdev,bluetooth myuser
 
 	## Change HDMI to 720p
 	sed -i "s/setenv hdmimode \"1080p60hz\"/setenv hdmimode \"720p60hz\"/"  /boot/firmware/boot.ini
