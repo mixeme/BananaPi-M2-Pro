@@ -97,7 +97,7 @@ fi
 	cp -R ./backgrounds				/usr/share/
 
 ## Some preferred apps
-	apt install	-y xarchiver upower
+	apt install -y xarchiver upower
 
 ## Desktop Environment
 	echo "===== Start installation of Desktop Environment. ====="
