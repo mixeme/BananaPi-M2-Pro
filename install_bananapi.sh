@@ -33,6 +33,7 @@ fi
 
 # Host rename
 	hostnamectl set-hostname $HOSTNAME
+	echo "Host is renamed. New name: $HOSTNAME"
 
 # System update
 	echo "===== Start system update. ====="
