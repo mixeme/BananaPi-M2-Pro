@@ -43,7 +43,9 @@ fi
 
 # Config users
 	## Create another user
+	### Add user
 	adduser myuser --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+	### Set up password
 	chpasswd <<< "myuser:password"
 	usermod -aG netdev,bluetooth myuser
 
