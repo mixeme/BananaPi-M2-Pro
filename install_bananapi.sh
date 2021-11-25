@@ -115,6 +115,7 @@ fi
 			TRANSMISSION=transmission-qt
 		;;
 	esac
+	echo "===== Desktop Environment - $1 - is installed. ====="
 
 	apt install -y gvfs gvfs-fuse gvfs-backends
 
