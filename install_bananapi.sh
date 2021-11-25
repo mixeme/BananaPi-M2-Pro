@@ -84,10 +84,12 @@ fi
 	echo "===== Start install Display Manager. ====="
 	apt install -y lightdm
 
+	### Copy config files
 	cp ./lightdm/10_userlist.conf	/usr/share/lightdm/lightdm.conf.d/
 	cp ./lightdm/11_autologin.conf	/usr/share/lightdm/lightdm.conf.d/
 	cp ./lightdm/02_background.conf	/usr/share/lightdm/lightdm-gtk-greeter.conf.d/
 
+	### Copy backgrounds
 	cp -R ./backgrounds				/usr/share/
 
 ## Some preferred apps
