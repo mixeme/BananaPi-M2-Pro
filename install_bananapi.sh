@@ -76,12 +76,12 @@ fi
 ## Wi-Fi manager
 	apt install -y network-manager
 
-## Desktop Environment
-	echo "===== Start installation of Desktop Environment. ====="
-	### X Server
+## X Window Server
+	echo "===== Start install X Window Server. ====="
 	apt install -y --no-install-recommends xserver-xorg-core xserver-xorg-input-libinput xinit dbus-x11 xfonts-base x11-xserver-utils x11-utils libgl1-mesa-dri mesa-utils mesa-utils-extra
 
-	### Display Manager
+## Display Manager
+	echo "===== Start install Display Manager. ====="
 	apt install -y lightdm
 	cp ./lightdm/10_userlist.conf	/usr/share/lightdm/lightdm.conf.d/
 	cp ./lightdm/11_autologin.conf	/usr/share/lightdm/lightdm.conf.d/
