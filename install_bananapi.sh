@@ -109,7 +109,7 @@ fi
 	apt install	-y policykit-1
 
 ### Icon themes
-	apt install -y gnome-icon-theme papirus-icon-theme tango-icon-theme
+	apt install -y tango-icon-theme papirus-icon-theme numix-icon-theme
 
 	echo "===== Desktop Environment is installed. ====="
 
