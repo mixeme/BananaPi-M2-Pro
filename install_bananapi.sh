@@ -90,16 +90,16 @@ fi
 	apt install	-y xarchiver upower
 
 	case $1 in
+		"xfce" )
+		### XFCE Desktop
+			apt install -y xfce4 xfce4-terminal thunar-archive-plugin
+			TRANSMISSION=transmission
+		;;
 		"lxqt" )
 		### LXQt Desktop
 			apt install -y --no-install-recommends lxqt feathernotes qpdfview speedcrunch
 			apt install -y lxqt-themes xfwm4-theme-breeze
 			TRANSMISSION=transmission-qt
-		;;
-		"xfce" )
-		### XFCE Desktop
-			apt install -y xfce4 xfce4-terminal thunar-archive-plugin
-			TRANSMISSION=transmission
 		;;
 	esac
 
@@ -121,6 +121,9 @@ fi
 ### Install packages
 	apt install -y tigervnc-scraping-server tigervnc-standalone-server tigervnc-xorg-extension
 
+### Allow remote connections
+	echo "\$localhost = \"no\";" >> /etc/vnc.conf
+
 ### Copy files
 	cp ./vnc/x0vnc.sh 				/usr/local/bin/
 	cp ./vnc/x0vncserver.service 	/etc/systemd/system/
@@ -137,9 +140,6 @@ fi
 	vncpasswd -f <<< "bananapi" > "$PI_HOME/.vnc/passwd"
 	chown -R pi:pi $PI_HOME/.vnc
 	chmod 600 $PI_HOME/.vnc/passwd
-
-### Allow remote connections
-	echo "\$localhost = \"no\";" >> /etc/vnc.conf
 
 ### Enable service
 	chmod +x /usr/local/bin/x0vnc.sh
