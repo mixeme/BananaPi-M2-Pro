@@ -110,7 +110,7 @@ fi
 		;;
 		"lxqt" )
 		### LXQt Desktop
-			apt install -y --no-install-recommends lxqt qpdfview speedcrunch feathernotes
+			apt install -y --no-install-recommends lxqt qterminal qpdfview speedcrunch feathernotes
 			apt install -y lxqt-themes xfwm4-theme-breeze
 			TRANSMISSION=transmission-qt
 		;;
