@@ -42,16 +42,17 @@ fi
 	echo "===== System is updated. ====="
 
 # Config users
-	apt install -y sudo
-	usermod -aG sudo pi
-	echo "===== User pi is sudo now. ====="
-
 	## Create another user
 	adduser myuser --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 	chpasswd <<< "myuser:password"
 	usermod -aG netdev,bluetooth myuser
 
 # Software installation
+## Sudo
+	apt install -y sudo
+	usermod -aG sudo pi
+	echo "===== User pi is sudo now. ====="
+
 ## Banana Pi utils
 	apt install -y pv curl
 
