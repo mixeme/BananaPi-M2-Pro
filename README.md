@@ -34,14 +34,15 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 ## How to
 1. Download and flash the base image to SD card;
 2. Copy repository contents to `/root/Install`;
-3. Permit `root` login through SSH. Skip this step if you will use keyboard and monitor for the installation;
+3. Specify users information in the script;
+4. Permit `root` login through SSH. Skip this step if you will use keyboard and monitor for the installation;
 	+ Open `/etc/ssh/sshd_config`;
 	+ Change line with `PermitRootLogin` to
 
 > PermitRootLogin yes
-4. Insert SD card to Banana Pi and power it on;
-5. Login as root (password `bananapi`);
-6. Start script
+5. Insert SD card to Banana Pi and power it on;
+6. Login as root (password `bananapi`);
+7. Start script
 ```
 bash Install/install_bananapi.sh
 ```
