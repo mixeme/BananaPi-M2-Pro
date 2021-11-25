@@ -127,7 +127,7 @@ fi
 ### Manage operations for non-root users
 	apt install	-y policykit-1
 
-## Wi-Fi & Bluetooth utils
+## Wi-Fi & Bluetooth GUI utils
 	apt install -y network-manager-gnome blueman
 
 ## VNC
