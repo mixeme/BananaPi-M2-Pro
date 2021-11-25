@@ -41,7 +41,7 @@ fi
 	apt upgrade -y
 	echo "===== System is updated. ====="
 
-# Operations with users
+# Config users
 	apt install -y sudo
 	usermod -aG sudo pi
 	echo "===== User pi is sudo now. ====="
