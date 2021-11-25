@@ -44,5 +44,5 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 6. Login as root (password `bananapi`);
 7. Start script
 ```
-bash Install/install_bananapi.sh
+bash ~/Install/install_bananapi.sh
 ```
