@@ -136,7 +136,7 @@ fi
 	apt install -y tigervnc-scraping-server tigervnc-standalone-server tigervnc-xorg-extension
 
 ### Allow remote connections
-	echo "\$localhost = \"no\";" >> /etc/vnc.conf
+	echo "\$localhost = \"no\";" >> $VNC_CONFIG
 
 ### Copy files
 	cp ./vnc/x0vnc.sh 				/usr/local/bin/
