@@ -86,9 +86,11 @@ fi
 	cp ./lightdm/10_userlist.conf	/usr/share/lightdm/lightdm.conf.d/
 	cp ./lightdm/11_autologin.conf	/usr/share/lightdm/lightdm.conf.d/
 
-	### Some preferred apps
+## Some preferred apps
 	apt install	-y xarchiver upower
 
+## Desktop Environment
+	echo "===== Start installation of Desktop Environment. ====="
 	case $1 in
 		"xfce" )
 		### XFCE Desktop
@@ -108,6 +110,7 @@ fi
 ### Manage operations for non-root users
 	apt install	-y policykit-1
 
+## Add-ons for Desktop Environment
 ### Icon themes
 	apt install -y tango-icon-theme papirus-icon-theme numix-icon-theme
 
