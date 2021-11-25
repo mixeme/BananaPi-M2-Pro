@@ -105,6 +105,7 @@ fi
 		"xfce" )
 		### XFCE Desktop
 			apt install -y xfce4 xfce4-terminal thunar-archive-plugin
+			apt install -y xfwm4-theme-breeze
 			TRANSMISSION=transmission
 		;;
 		"lxqt" )
