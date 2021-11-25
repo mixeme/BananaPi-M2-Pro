@@ -22,7 +22,7 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 	+ Desktop is LightDM (display manager) + xfwm (window manager) + LXQt/XFCE;
 	+ LightDM is configured to provide user list on logon screen (`lightdm/10_userlist.conf` file) and autologin for user `pi` (`lightdm/11_autologin.conf` file);
 9. Install Wi-Fi & Bluetooth utils (Network Manager Gnome and Blueman);
-10. Install and configure VNC server (TigerVNC) for `:0` (physical) and `:1` (for `pi`) displays;
+10. Install and configure VNC server (TigerVNC) for `:0` (physical) and `:1` (for `pi` user) displays;
 11. Install other userful apps (comment unnecessary or add your favorite ones);
 12. Make some system changes;
 	+ Add user `pi` to group `bluetooth`;
