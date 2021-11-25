@@ -180,11 +180,12 @@ fi
 	usermod -aG bluetooth pi
 	usermod -aG netdev,bluetooth myuser
 
+	## Enable Network Manager
+	sed -i "s/managed=false/managed=true/" /etc/NetworkManager/NetworkManager.conf
+
 	## Change HDMI to 720p
 	sed -i "s/setenv hdmimode \"1080p60hz\"/setenv hdmimode \"720p60hz\"/"  /boot/firmware/boot.ini
 
-	## Enable Network Manager
-	sed -i "s/managed=false/managed=true/" /etc/NetworkManager/NetworkManager.conf
 
 	## Rename MiniDLNA host and enable automatic discovery
 	sed -i "s/#friendly_name=/friendly_name=$HOSTNAME/" /etc/minidlna.conf
