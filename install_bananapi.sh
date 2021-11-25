@@ -25,6 +25,9 @@ else
 	esac
 fi
 
+# Set work directory in place of the installation script
+	cd $(dirname $0)
+
 # Variables
 	HOSTNAME=BananaPi
 
