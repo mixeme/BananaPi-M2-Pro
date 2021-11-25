@@ -117,16 +117,15 @@ fi
 	esac
 	echo "===== Desktop Environment - $1 - is installed. ====="
 
-	apt install -y gvfs gvfs-fuse gvfs-backends
-
-### Manage operations for non-root users
-	apt install	-y policykit-1
-
 ## Add-ons for Desktop Environment
 ### Icon themes
 	apt install -y tango-icon-theme papirus-icon-theme numix-icon-theme
 
-	echo "===== Desktop Environment is installed. ====="
+### Virtual filesystems
+	apt install -y gvfs gvfs-fuse gvfs-backends
+
+### Manage operations for non-root users
+	apt install	-y policykit-1
 
 ## Wi-Fi & Bluetooth utils
 	apt install -y network-manager-gnome blueman
