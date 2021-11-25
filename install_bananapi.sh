@@ -83,6 +83,7 @@ fi
 ## Display Manager
 	echo "===== Start install Display Manager. ====="
 	apt install -y lightdm
+
 	cp ./lightdm/10_userlist.conf	/usr/share/lightdm/lightdm.conf.d/
 	cp ./lightdm/11_autologin.conf	/usr/share/lightdm/lightdm.conf.d/
 
