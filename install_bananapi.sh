@@ -100,7 +100,7 @@ fi
 	apt install -y xarchiver upower
 
 ## Desktop Environment
-	echo "===== Start installation of Desktop Environment. ====="
+	echo "===== Start install Desktop Environment - $1. ====="
 	case $1 in
 		"xfce" )
 		### XFCE Desktop
