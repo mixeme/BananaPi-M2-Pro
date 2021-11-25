@@ -12,11 +12,11 @@
 # Check input arguments
 if [[ $# -ne 1 ]];
 then
-	echo "Input desired desktop: lxqt or xfce"
+	echo "Input desired desktop: xfce or lxqt."
 	exit 0
 else
 	case $1 in
-		"lxqt" | "xfce" )
+		"xfce" | "lxqt" )
 		;;
 		* )
 			echo "Unknown desktop!"
