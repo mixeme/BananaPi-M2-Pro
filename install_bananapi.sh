@@ -45,7 +45,7 @@ fi
 	usermod -aG sudo pi
 	echo "===== User pi is sudo now. ====="
 
-	# Another user
+	## Create another user
 	adduser myuser --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 	chpasswd <<< "myuser:password"
 	usermod -aG netdev,bluetooth myuser
