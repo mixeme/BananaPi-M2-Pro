@@ -48,6 +48,7 @@ fi
 	# User another user
 	adduser myuser --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 	chpasswd <<< "myuser:password"
+	usermod -aG netdev,bluetooth myuser
 
 # Software installation
 ## Banana Pi utils
