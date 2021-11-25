@@ -86,6 +86,9 @@ fi
 
 	cp ./lightdm/10_userlist.conf	/usr/share/lightdm/lightdm.conf.d/
 	cp ./lightdm/11_autologin.conf	/usr/share/lightdm/lightdm.conf.d/
+	cp ./lightdm/02_background.conf	/usr/share/lightdm/lightdm-gtk-greeter.conf.d/
+
+	cp -R ./backgrounds				/usr/share/
 
 ## Some preferred apps
 	apt install	-y xarchiver upower
