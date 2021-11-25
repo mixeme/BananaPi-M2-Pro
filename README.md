@@ -14,7 +14,7 @@ from the vendor [website](https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Debian).
 1. Rename host to "BananaPi";
 2. Upgrade system;
 3. Make user `pi` as `sudo`;
-4. Add another user **(specify his name or comment it)**;
+4. Add another user *(specify his name or comment it)*;
 5. Install Banana Pi Tools;
 6. Install Bluetooth Driver;
 7. Install Network Manager (for manage Wi-Fi);
